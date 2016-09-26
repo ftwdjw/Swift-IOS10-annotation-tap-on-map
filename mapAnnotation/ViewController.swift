@@ -30,6 +30,7 @@ CLLocationManagerDelegate {
         let touchPoint = gestureRecognizer.location(in: mapView)
         let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
         let annotation = MKPointAnnotation()
+        annotation.title = "My Parking Location"
         annotation.coordinate = newCoordinates
         mapView.addAnnotation(annotation)
         
