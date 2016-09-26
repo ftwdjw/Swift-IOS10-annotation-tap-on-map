@@ -18,21 +18,32 @@ CLLocationManagerDelegate {
     var i=0
     var latitude=0.0
     var longitude=0.0
+    var dropPin=true
     
     
     @IBOutlet weak var mapView: MKMapView!
     
     @IBAction func tapOnMap(_ gestureRecognizer: UITapGestureRecognizer) {
         i += 1
+        
+        let annotation = MKPointAnnotation()
+        
+        if dropPin==true{
         print("this is a tap on the map number=\(i)")
         print("latiutude=\(latitude)")
         print("longitude=\(longitude)")
         let touchPoint = gestureRecognizer.location(in: mapView)
         let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
-        let annotation = MKPointAnnotation()
+        
         annotation.title = "My Parking Location"
         annotation.coordinate = newCoordinates
-        mapView.addAnnotation(annotation)
+            mapView.addAnnotation(annotation)
+             dropPin=false
+        }
+            
+        else{
+            mapView.removeAnnotations([annotation])
+        }
         
     }
     
