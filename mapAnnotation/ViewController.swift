@@ -7,8 +7,22 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate,
+CLLocationManagerDelegate {
+    
+    var i=0
+    
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    @IBAction func tapOnMap(_ sender: UITapGestureRecognizer) {
+        i += 1
+        print("this is a tap on the map number=\(i)")
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
