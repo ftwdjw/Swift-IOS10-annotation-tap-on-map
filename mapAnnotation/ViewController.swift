@@ -10,6 +10,21 @@ import UIKit
 import MapKit
 import CoreLocation
 
+class ListPage: UIViewController {
+    @IBOutlet weak var browsingImage: UIImageView!
+    var newImage: UIImage!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        browsingImage.image = newImage
+    }
+}
+
+
+class CustomPointAnnotation: MKPointAnnotation {
+    var imageName: String!
+}
+
 class ViewController: UIViewController, MKMapViewDelegate,
 CLLocationManagerDelegate {
     
@@ -24,6 +39,8 @@ CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
+    /*
+    
     @IBAction func tapOnMap(_ gestureRecognizer: UITapGestureRecognizer) {
         i += 1
         
@@ -37,6 +54,12 @@ CLLocationManagerDelegate {
         let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
         annotation.title = "My Parking Location"
         annotation.coordinate = newCoordinates
+            
+            let info1 = CustomPointAnnotation()
+            info1.coordinate = newCoordinates
+            info1.title = "My Parking Location"
+            info1.imageName = "browsingImage"
+            
             mapView.addAnnotation(annotation)
              dropPin=false
         }
@@ -46,6 +69,7 @@ CLLocationManagerDelegate {
         }
         
     }
+ */
     
     @IBAction func start(_ sender: AnyObject) {
         dropPin=true
@@ -115,13 +139,30 @@ CLLocationManagerDelegate {
         
         //add annotation
         if dropPin==true{
+            
+            let image = ListPage()
+            
+            let testImage = image.newImage
+            
+            if testImage != nil{
+            print("\ntest image is present\n")
+            let info1 = CustomPointAnnotation()
+            info1.coordinate = center
+            info1.title = "My Parking Location"
+            info1.imageName = "testImage"
+            mapView.addAnnotation(info1)
+            }
+            else{
+            print("\ntest image is nil\n")
             annotation.title = "My Parking Location"
             annotation.coordinate = center
             mapView.addAnnotation(annotation)
+            }
             
         }
         else{
             mapView.removeAnnotations([annotation])
+            print("\nremove annotations\n")
         }
         
         
@@ -151,7 +192,7 @@ CLLocationManagerDelegate {
         print("Error: " + error.localizedDescription)
     }
 
-
+   
 
 }
 

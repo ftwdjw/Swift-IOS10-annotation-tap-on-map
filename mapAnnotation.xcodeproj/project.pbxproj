@@ -13,6 +13,8 @@
 		1B7EB1F31D996746000C6879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EB1F21D996746000C6879 /* Assets.xcassets */; };
 		1B7EB1F61D996746000C6879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EB1F41D996746000C6879 /* LaunchScreen.storyboard */; };
 		1B7EB1FE1D996814000C6879 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EB1FD1D996814000C6879 /* ReadMe.rtf */; };
+		1B7EB2001D9AE7B7000C6879 /* MyParkingPhoto2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EB1FF1D9AE7B7000C6879 /* MyParkingPhoto2.png */; };
+		1B7EB2021D9AE810000C6879 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EB2011D9AE810000C6879 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1B7EB1F51D996746000C6879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B7EB1F71D996746000C6879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7EB1FD1D996814000C6879 /* ReadMe.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		1B7EB1FF1D9AE7B7000C6879 /* MyParkingPhoto2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyParkingPhoto2.png; sourceTree = "<group>"; };
+		1B7EB2011D9AE810000C6879 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				1B7EB1EB1D996746000C6879 /* AppDelegate.swift */,
 				1B7EB1FD1D996814000C6879 /* ReadMe.rtf */,
 				1B7EB1ED1D996746000C6879 /* ViewController.swift */,
+				1B7EB1FF1D9AE7B7000C6879 /* MyParkingPhoto2.png */,
 				1B7EB1EF1D996746000C6879 /* Main.storyboard */,
+				1B7EB2011D9AE810000C6879 /* SecondViewController.swift */,
 				1B7EB1F21D996746000C6879 /* Assets.xcassets */,
 				1B7EB1F41D996746000C6879 /* LaunchScreen.storyboard */,
 				1B7EB1F71D996746000C6879 /* Info.plist */,
@@ -130,6 +136,7 @@
 				1B7EB1F61D996746000C6879 /* LaunchScreen.storyboard in Resources */,
 				1B7EB1F31D996746000C6879 /* Assets.xcassets in Resources */,
 				1B7EB1FE1D996814000C6879 /* ReadMe.rtf in Resources */,
+				1B7EB2001D9AE7B7000C6879 /* MyParkingPhoto2.png in Resources */,
 				1B7EB1F11D996746000C6879 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7EB2021D9AE810000C6879 /* SecondViewController.swift in Sources */,
 				1B7EB1EE1D996746000C6879 /* ViewController.swift in Sources */,
 				1B7EB1EC1D996746000C6879 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +312,7 @@
 				1B7EB1FC1D996746000C6879 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
