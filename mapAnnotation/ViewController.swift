@@ -19,6 +19,7 @@ CLLocationManagerDelegate {
     var latitude=0.0
     var longitude=0.0
     var dropPin=true
+    let annotation = MKPointAnnotation()
     
     
     @IBOutlet weak var mapView: MKMapView!
@@ -34,7 +35,6 @@ CLLocationManagerDelegate {
         print("longitude=\(longitude)")
         let touchPoint = gestureRecognizer.location(in: mapView)
         let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
-        
         annotation.title = "My Parking Location"
         annotation.coordinate = newCoordinates
             mapView.addAnnotation(annotation)
@@ -46,6 +46,16 @@ CLLocationManagerDelegate {
         }
         
     }
+    
+    @IBAction func start(_ sender: AnyObject) {
+        dropPin=true
+    }
+    
+    @IBAction func stop(_ sender: AnyObject) {
+               dropPin=false
+    }
+    
+    
     
     // MARK: - Properties
     
@@ -102,6 +112,20 @@ CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         self.mapView.setRegion(region, animated: true)
+        
+        //add annotation
+        if dropPin==true{
+            annotation.title = "My Parking Location"
+            annotation.coordinate = center
+            mapView.addAnnotation(annotation)
+            
+        }
+        else{
+            mapView.removeAnnotations([annotation])
+        }
+        
+        
+        
         
         //self.locationManager.stopUpdatingLocation()
     }

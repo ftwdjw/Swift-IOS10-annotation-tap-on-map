@@ -15,19 +15,40 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-T3-UEI">
-                                <frame key="frameInset" width="375" height="673"/>
+                                <frame key="frameInset" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GGt-Xc-s7h" appends="YES" id="cWn-uT-r5Y"/>
                                 </connections>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEh-io-JR4">
+                                <items>
+                                    <barButtonItem systemItem="camera" id="MrM-TI-2Os"/>
+                                    <barButtonItem systemItem="add" id="Xk3-Cu-9Vr">
+                                        <connections>
+                                            <action selector="start:" destination="BYZ-38-t0r" id="EkK-bR-lQk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SyR-ys-8Kt"/>
+                                    <barButtonItem systemItem="stop" id="Vz5-2e-WV2">
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="WQR-4Y-JPb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KEh-io-JR4" secondAttribute="trailing" id="477-KB-XzS"/>
+                            <constraint firstItem="KEh-io-JR4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8sS-rA-SDr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KEh-io-JR4" secondAttribute="bottom" id="CNF-MN-kVC"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="uRd-T3-UEI" id="gzP-Q1-Ds3"/>
@@ -40,7 +61,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
         </scene>
     </scenes>
 </document>
