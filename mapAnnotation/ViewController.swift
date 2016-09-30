@@ -22,10 +22,12 @@ CLLocationManagerDelegate {
     
     //variables
     var measurement=0
+    var measurementSave = 0
     var i=0
     var latitude=0.0
     var longitude=0.0
     var dropPin=true
+    var lastDropPin=false
     let annotation = MKPointAnnotation()
     
     
@@ -107,22 +109,24 @@ CLLocationManagerDelegate {
         self.mapView.setRegion(region, animated: true)
         
         //add annotation
-        if dropPin==true{
+        if dropPin==true && lastDropPin==false {
           
-            print("\nadd annotation\n")
             annotation.title = "My Parking Location"
             annotation.coordinate = center
             mapView.addAnnotation(annotation)
+            measurementSave=measurement
+            print("\nadd annotation\n")
+            print("\nmeasurementSaved=\(measurementSave)\n")
             
         }
-        else{
+        if dropPin==false && lastDropPin==true {
             mapView.removeAnnotations([annotation])
             print("\nremove annotations\n")
         }
         
         
         
-        
+        lastDropPin=dropPin
         //self.locationManager.stopUpdatingLocation()
     }
     
