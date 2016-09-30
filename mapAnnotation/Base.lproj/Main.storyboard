@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,12 +16,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-T3-UEI">
-                                <frame key="frameInset" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uRd-T3-UEI">
                                 <gestureRecognizers/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEh-io-JR4">
@@ -44,22 +43,35 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyParkingPhoto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-9e-tSI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="Iho-vC-Wmk"/>
+                                    <constraint firstAttribute="width" constant="100" id="Xkx-wE-7gd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KEh-io-JR4" firstAttribute="top" secondItem="uRd-T3-UEI" secondAttribute="bottom" id="0Vz-Kk-rx7"/>
                             <constraint firstAttribute="trailing" secondItem="KEh-io-JR4" secondAttribute="trailing" id="477-KB-XzS"/>
+                            <constraint firstItem="uRd-T3-UEI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Xg-SL-q6H"/>
                             <constraint firstItem="KEh-io-JR4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8sS-rA-SDr"/>
+                            <constraint firstItem="vD9-9e-tSI" firstAttribute="leading" secondItem="uRd-T3-UEI" secondAttribute="leading" id="8xy-xR-C76"/>
+                            <constraint firstItem="uRd-T3-UEI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BUV-hF-4oV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KEh-io-JR4" secondAttribute="bottom" id="CNF-MN-kVC"/>
+                            <constraint firstAttribute="trailing" secondItem="uRd-T3-UEI" secondAttribute="trailing" id="VFz-X6-bis"/>
+                            <constraint firstItem="vD9-9e-tSI" firstAttribute="top" secondItem="uRd-T3-UEI" secondAttribute="top" id="xQX-kx-cbk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z7S-KJ-9qp"/>
                     <connections>
+                        <outlet property="imageView" destination="vD9-9e-tSI" id="dUn-fm-sPz"/>
                         <outlet property="mapView" destination="uRd-T3-UEI" id="gzP-Q1-Ds3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113.75" y="123.59154929577466"/>
+            <point key="canvasLocation" x="1112.8" y="122.78860569715144"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="QL4-0K-wQB">
@@ -70,12 +82,13 @@
                         <viewControllerLayoutGuide type="bottom" id="0g1-xt-aUn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xHD-iB-EEA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MyParkingPhoto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-Yj-2fn">
-                                <frame key="frameInset" minX="-8" width="328" height="520"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyParkingPhoto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-Yj-2fn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="520" id="T6Y-Ki-nS4"/>
+                                </constraints>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUo-Ct-hzb">
                                 <frame key="frameInset" minX="-1" height="44" maxX="1"/>
@@ -99,6 +112,11 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PRN-Yj-2fn" firstAttribute="top" secondItem="xHD-iB-EEA" secondAttribute="top" id="N6c-S2-kno"/>
+                            <constraint firstAttribute="trailing" secondItem="PRN-Yj-2fn" secondAttribute="trailing" id="Nw3-WT-tnE"/>
+                            <constraint firstItem="PRN-Yj-2fn" firstAttribute="leading" secondItem="xHD-iB-EEA" secondAttribute="leadingMargin" constant="-24" id="ilM-ET-Esa"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="PRN-Yj-2fn" id="zt6-is-url"/>
@@ -106,12 +124,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xi2-3T-TsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884.375" y="128.87323943661971"/>
+            <point key="canvasLocation" x="1884" y="128.18590704647679"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L66-Qx-bih">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="etL-uf-3wk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="etL-uf-3wk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5z-Mj-lDd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

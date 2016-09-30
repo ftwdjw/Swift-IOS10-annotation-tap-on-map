@@ -62,16 +62,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         print("\nprepare for segue\n")
         
-        if segue.identifier == "toCamera" {
-            let dvc = segue.destination as! ListPage
-            dvc.newImage = imageView.image
-            if dvc.newImage != nil{
-                print("\nnewImage is present\n")
-            }
-            else{
-                print("\nno picture present\n")
-            }
-        }
+       
     }
     
     
