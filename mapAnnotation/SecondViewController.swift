@@ -11,6 +11,8 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBOutlet var imageView: UIImageView!
     
+     var myPhoto:  UIImage?
+    
     
     
     override func viewDidLoad() {//begin
@@ -45,6 +47,12 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         print("\npicture taken\n")
         
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        UIImageWriteToSavedPhotosAlbum(imageView.image!, nil, nil, nil)
+        
+    
+        print("\nimage saved\n")
+        
         dismiss(animated: true, completion: nil)
         
     }
@@ -58,12 +66,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        print("\nprepare for segue\n")
-        
-       
-    }
+ 
     
     
 }//end

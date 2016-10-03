@@ -9,16 +9,24 @@
 import UIKit
 import MapKit
 import CoreLocation
+import AVFoundation
 
-
+class ListPage: UIViewController {
+    @IBOutlet weak var browsingImage: UIImageView!
+    var newImage: UIImage!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        browsingImage.image = newImage
+    }
+}
 
 
 class CustomPointAnnotation: MKPointAnnotation {
     var imageName: String!
 }
 
-class ViewController: UIViewController, MKMapViewDelegate,
-CLLocationManagerDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //variables
     var measurement=0
@@ -29,6 +37,17 @@ CLLocationManagerDelegate {
     var dropPin=true
     var lastDropPin=false
     let annotation = MKPointAnnotation()
+    
+    
+    @IBAction func tapForPicture(_ sender: AnyObject) {
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        print("\nchoose existing photo\n")
+        present(picker, animated: true, completion: nil)
+        
+    }
     
     
     @IBOutlet weak var mapView: MKMapView!
@@ -42,6 +61,21 @@ CLLocationManagerDelegate {
     @IBAction func stop(_ sender: AnyObject) {
                dropPin=false
     }
+    
+    
+    func chooseParkingLocation(_ sender: AnyObject) {
+        
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        present(picker, animated: true, completion: nil)
+        
+        print("choose existing photo")
+
+        
+    }
+    
     
     
     
@@ -78,6 +112,7 @@ CLLocationManagerDelegate {
         
         self.locationManager.startUpdatingLocation()
         dropPin=true
+        
         
         
         
@@ -118,6 +153,8 @@ CLLocationManagerDelegate {
             print("\nadd annotation\n")
             print("\nmeasurementSaved=\(measurementSave)\n")
             
+          
+            
         }
         if dropPin==false && lastDropPin==true {
             mapView.removeAnnotations([annotation])
@@ -150,6 +187,18 @@ CLLocationManagerDelegate {
     {
         print("Error: " + error.localizedDescription)
     }
+    
+    //MARK: - finishGettingPhoto
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
+
 
    
 

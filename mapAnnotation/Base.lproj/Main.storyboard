@@ -32,6 +32,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Hvh-dK-6Ta"/>
                                     <barButtonItem systemItem="camera" id="MrM-TI-2Os">
                                         <connections>
+                                            <action selector="chooseParkingLocation:" destination="BYZ-38-t0r" id="w5u-xt-QGg"/>
                                             <segue destination="Ks1-g4-WvQ" kind="presentation" identifier="toCamera" id="LBm-PS-hvg"/>
                                         </connections>
                                     </barButtonItem>
@@ -43,11 +44,15 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyParkingPhoto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-9e-tSI">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyParkingPhoto2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4p9-ua-0sS">
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="Iho-vC-Wmk"/>
-                                    <constraint firstAttribute="width" constant="100" id="Xkx-wE-7gd"/>
+                                    <constraint firstAttribute="height" constant="122" id="Ai4-DN-x1k"/>
+                                    <constraint firstAttribute="width" constant="122" id="ZLf-cz-NOj"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hTq-el-1kQ" appends="YES" id="7B8-uw-PgL"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,22 +61,27 @@
                             <constraint firstAttribute="trailing" secondItem="KEh-io-JR4" secondAttribute="trailing" id="477-KB-XzS"/>
                             <constraint firstItem="uRd-T3-UEI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Xg-SL-q6H"/>
                             <constraint firstItem="KEh-io-JR4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8sS-rA-SDr"/>
-                            <constraint firstItem="vD9-9e-tSI" firstAttribute="leading" secondItem="uRd-T3-UEI" secondAttribute="leading" id="8xy-xR-C76"/>
                             <constraint firstItem="uRd-T3-UEI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BUV-hF-4oV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KEh-io-JR4" secondAttribute="bottom" id="CNF-MN-kVC"/>
                             <constraint firstAttribute="trailing" secondItem="uRd-T3-UEI" secondAttribute="trailing" id="VFz-X6-bis"/>
-                            <constraint firstItem="vD9-9e-tSI" firstAttribute="top" secondItem="uRd-T3-UEI" secondAttribute="top" id="xQX-kx-cbk"/>
+                            <constraint firstItem="4p9-ua-0sS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="boe-je-yaA"/>
+                            <constraint firstItem="4p9-ua-0sS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wXH-p6-KzT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z7S-KJ-9qp"/>
                     <connections>
-                        <outlet property="imageView" destination="vD9-9e-tSI" id="dUn-fm-sPz"/>
+                        <outlet property="imageView" destination="4p9-ua-0sS" id="ISJ-GX-wZc"/>
                         <outlet property="mapView" destination="uRd-T3-UEI" id="gzP-Q1-Ds3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hTq-el-1kQ">
+                    <connections>
+                        <action selector="tapForPicture:" destination="BYZ-38-t0r" id="rPC-as-KvY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1112.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1111.2" y="121.88905547226388"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="QL4-0K-wQB">
