@@ -56,10 +56,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @IBAction func start(_ sender: AnyObject) {
         dropPin=true
+        //self.locationManager.startUpdatingLocation()
     }
     
     @IBAction func stop(_ sender: AnyObject) {
                dropPin=false
+        //self.locationManager.stopUpdatingLocation()
     }
     
     
@@ -94,6 +96,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         locationManager.pausesLocationUpdatesAutomatically = true
         locationManager.activityType = CLActivityType.fitness
         locationManager.allowsBackgroundLocationUpdates = false
+        locationManager.startUpdatingHeading()
         
         return locationManager
     }()
@@ -112,6 +115,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         self.locationManager.startUpdatingLocation()
         dropPin=true
+        
+        mapView.showsCompass=true
+        
+        mapView.setUserTrackingMode(MKUserTrackingMode.followWithHeading, animated: true)
         
         
         

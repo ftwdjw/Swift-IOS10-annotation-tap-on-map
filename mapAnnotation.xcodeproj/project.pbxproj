@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0A44291DA2ADA70055EDBB /* MyParkingSectionPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A44281DA2ADA70055EDBB /* MyParkingSectionPhoto.png */; };
+		1B0A44321DA2AE550055EDBB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A442B1DA2AE550055EDBB /* Contents.json */; };
+		1B0A44331DA2AE550055EDBB /* parkingIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A442C1DA2AE550055EDBB /* parkingIcon-114.png */; };
+		1B0A44341DA2AE550055EDBB /* parkingIcon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A442D1DA2AE550055EDBB /* parkingIcon-120.png */; };
+		1B0A44351DA2AE550055EDBB /* parkingIcon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A442E1DA2AE550055EDBB /* parkingIcon-29.png */; };
+		1B0A44361DA2AE550055EDBB /* parkingIcon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A442F1DA2AE550055EDBB /* parkingIcon-57.png */; };
+		1B0A44371DA2AE550055EDBB /* parkingIcon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A44301DA2AE550055EDBB /* parkingIcon-58.png */; };
+		1B0A44381DA2AE550055EDBB /* parkingIcon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A44311DA2AE550055EDBB /* parkingIcon-80.png */; };
+		1B0A443B1DA2AE880055EDBB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A443A1DA2AE880055EDBB /* Contents.json */; };
+		1B0A443F1DA2B0020055EDBB /* parkingIcon-Small-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A443E1DA2B0020055EDBB /* parkingIcon-Small-29.png */; };
+		1B0A44431DA2B10E0055EDBB /* parkingIcon-Small-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A44421DA2B10E0055EDBB /* parkingIcon-Small-20.png */; };
+		1B0A44451DA2D95A0055EDBB /* parkingIcon-20 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A44441DA2D95A0055EDBB /* parkingIcon-20 40.png */; };
+		1B0A44471DA2DCC20055EDBB /* myParkingApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B0A44461DA2DCC20055EDBB /* myParkingApp.png */; };
 		1B7EB1EC1D996746000C6879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EB1EB1D996746000C6879 /* AppDelegate.swift */; };
 		1B7EB1EE1D996746000C6879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EB1ED1D996746000C6879 /* ViewController.swift */; };
 		1B7EB1F11D996746000C6879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7EB1EF1D996746000C6879 /* Main.storyboard */; };
@@ -19,6 +32,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0A44281DA2ADA70055EDBB /* MyParkingSectionPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyParkingSectionPhoto.png; sourceTree = "<group>"; };
+		1B0A442B1DA2AE550055EDBB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		1B0A442C1DA2AE550055EDBB /* parkingIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-114.png"; sourceTree = "<group>"; };
+		1B0A442D1DA2AE550055EDBB /* parkingIcon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-120.png"; sourceTree = "<group>"; };
+		1B0A442E1DA2AE550055EDBB /* parkingIcon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-29.png"; sourceTree = "<group>"; };
+		1B0A442F1DA2AE550055EDBB /* parkingIcon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-57.png"; sourceTree = "<group>"; };
+		1B0A44301DA2AE550055EDBB /* parkingIcon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-58.png"; sourceTree = "<group>"; };
+		1B0A44311DA2AE550055EDBB /* parkingIcon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-80.png"; sourceTree = "<group>"; };
+		1B0A443A1DA2AE880055EDBB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		1B0A443E1DA2B0020055EDBB /* parkingIcon-Small-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-Small-29.png"; sourceTree = "<group>"; };
+		1B0A44421DA2B10E0055EDBB /* parkingIcon-Small-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-Small-20.png"; sourceTree = "<group>"; };
+		1B0A44441DA2D95A0055EDBB /* parkingIcon-20 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkingIcon-20 40.png"; sourceTree = "<group>"; };
+		1B0A44461DA2DCC20055EDBB /* myParkingApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myParkingApp.png; sourceTree = "<group>"; };
 		1B7EB1E81D996746000C6879 /* mapAnnotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapAnnotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7EB1EB1D996746000C6879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B7EB1ED1D996746000C6879 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0A442A1DA2AE550055EDBB /* AppIcon-2.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				1B0A442B1DA2AE550055EDBB /* Contents.json */,
+				1B0A442C1DA2AE550055EDBB /* parkingIcon-114.png */,
+				1B0A443E1DA2B0020055EDBB /* parkingIcon-Small-29.png */,
+				1B0A44421DA2B10E0055EDBB /* parkingIcon-Small-20.png */,
+				1B0A442D1DA2AE550055EDBB /* parkingIcon-120.png */,
+				1B0A44441DA2D95A0055EDBB /* parkingIcon-20 40.png */,
+				1B0A442E1DA2AE550055EDBB /* parkingIcon-29.png */,
+				1B0A442F1DA2AE550055EDBB /* parkingIcon-57.png */,
+				1B0A44301DA2AE550055EDBB /* parkingIcon-58.png */,
+				1B0A44311DA2AE550055EDBB /* parkingIcon-80.png */,
+			);
+			path = "AppIcon-2.appiconset";
+			sourceTree = "<group>";
+		};
+		1B0A44391DA2AE880055EDBB /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				1B0A443A1DA2AE880055EDBB /* Contents.json */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
 		1B7EB1DF1D996746000C6879 = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +118,13 @@
 				1B7EB1ED1D996746000C6879 /* ViewController.swift */,
 				1BED2A671D9EEAB4008B0784 /* Photo.swift */,
 				1B7EB1FF1D9AE7B7000C6879 /* MyParkingPhoto2.png */,
+				1B0A44461DA2DCC20055EDBB /* myParkingApp.png */,
+				1B0A44281DA2ADA70055EDBB /* MyParkingSectionPhoto.png */,
 				1B7EB1EF1D996746000C6879 /* Main.storyboard */,
 				1B7EB2011D9AE810000C6879 /* SecondViewController.swift */,
+				1B0A44391DA2AE880055EDBB /* AppIcon.appiconset */,
 				1B7EB1F21D996746000C6879 /* Assets.xcassets */,
+				1B0A442A1DA2AE550055EDBB /* AppIcon-2.appiconset */,
 				1B7EB1F41D996746000C6879 /* LaunchScreen.storyboard */,
 				1B7EB1F71D996746000C6879 /* Info.plist */,
 			);
@@ -136,11 +191,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0A44471DA2DCC20055EDBB /* myParkingApp.png in Resources */,
+				1B0A44291DA2ADA70055EDBB /* MyParkingSectionPhoto.png in Resources */,
+				1B0A443F1DA2B0020055EDBB /* parkingIcon-Small-29.png in Resources */,
+				1B0A44331DA2AE550055EDBB /* parkingIcon-114.png in Resources */,
+				1B0A44431DA2B10E0055EDBB /* parkingIcon-Small-20.png in Resources */,
+				1B0A44351DA2AE550055EDBB /* parkingIcon-29.png in Resources */,
+				1B0A44361DA2AE550055EDBB /* parkingIcon-57.png in Resources */,
 				1B7EB1F61D996746000C6879 /* LaunchScreen.storyboard in Resources */,
+				1B0A443B1DA2AE880055EDBB /* Contents.json in Resources */,
+				1B0A44371DA2AE550055EDBB /* parkingIcon-58.png in Resources */,
+				1B0A44341DA2AE550055EDBB /* parkingIcon-120.png in Resources */,
 				1B7EB1F31D996746000C6879 /* Assets.xcassets in Resources */,
+				1B0A44321DA2AE550055EDBB /* Contents.json in Resources */,
 				1B7EB1FE1D996814000C6879 /* ReadMe.rtf in Resources */,
 				1B7EB2001D9AE7B7000C6879 /* MyParkingPhoto2.png in Resources */,
+				1B0A44381DA2AE550055EDBB /* parkingIcon-80.png in Resources */,
 				1B7EB1F11D996746000C6879 /* Main.storyboard in Resources */,
+				1B0A44451DA2D95A0055EDBB /* parkingIcon-20 40.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
